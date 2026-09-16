@@ -22,7 +22,7 @@ def withdraw_money(account, amount):
     # TODO 4:
     # Call the Account object's withdraw()
     # method.
-    success = amount.withdraw(amount)
+    success = account.withdraw(amount)
  
     # TODO 5:
     # If successful, create a timestamp.

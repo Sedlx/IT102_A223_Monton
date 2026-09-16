@@ -24,7 +24,7 @@ account = Account(
 
 st.set_page_config(
     page_title="Python ATM",
-    page_icon="ATM",
+    page_icon="🏦",
     layout="wide"
 )
 
