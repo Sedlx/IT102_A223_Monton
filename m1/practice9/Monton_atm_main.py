@@ -1,5 +1,10 @@
 import streamlit as st
 
+account = Account(
+    "Juan Dela Cruz",
+    10000.00
+)
+
 from Monton_atm_account import Account
 import Monton_atm_analysis
 import Monton_atm_balance
@@ -8,14 +13,6 @@ import Monton_atm_withdraw
 import Monton_atm_history
 
 
-# ==========================================
-# ATM ACCOUNT
-# ==========================================
-
-account = Account(
-    "Juan Dela Cruz",
-    10000.00
-)
 
 
 # ==========================================
@@ -159,10 +156,7 @@ elif choice == "Withdraw":
         else:
 
             success = (
-                Monton_atm_withdraw.withdraw_money(
-                    account,
-                    amount
-                )
+                Monton_atm_withdraw.withdraw_money(account, amount)
             )
 
             if success:
