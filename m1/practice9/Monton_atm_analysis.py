@@ -76,8 +76,7 @@ def analyze_transactions():
             except ValueError:
                 current["amount"] = 0.0
 
-            # Only add a transaction if the
-            # required information exists.
+            
             if "type" in current and "amount" in current:
 
                 transactions.append(current.copy())
@@ -85,10 +84,9 @@ def analyze_transactions():
             current = {}
 
 
-    # ==========================================
+  
     # ANALYSIS 1
-    # TRANSACTION SUMMARY
-    # ==========================================
+
 
     total_transactions = len(transactions)
 
@@ -96,20 +94,17 @@ def analyze_transactions():
     withdrawals = 0
 
 
-    # ==========================================
+ 
     # ANALYSIS 2
-    # TRANSACTION AMOUNT ANALYSIS
-    # ==========================================
+
 
     total_deposited = 0
     total_withdrawn = 0
     largest_transaction = 0
 
 
-    # ==========================================
+
     # ANALYSIS 3
-    # ACCOUNT ACTIVITY ANALYSIS
-    # ==========================================
 
     latest_transaction = "None"
     latest_timestamp = "None"
@@ -142,13 +137,13 @@ def analyze_transactions():
         # Get latest transaction
         latest_transaction = transaction_type
 
-        # Timestamp may not exist in old records
+        
         if "timestamp" in transaction:
 
             latest_timestamp = transaction["timestamp"]
 
 
-    # Calculate average transaction amount
+    
 
     if total_transactions > 0:
 

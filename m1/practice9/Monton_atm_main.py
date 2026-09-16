@@ -15,9 +15,8 @@ account = Account(
     10000.00
 )
 
-# ==========================================
+
 # STREAMLIT PAGE CONFIGURATION
-# ==========================================
 
 st.set_page_config(
     page_title="Python ATM",
@@ -26,9 +25,7 @@ st.set_page_config(
 )
 
 
-# ==========================================
-# ATM HEADER
-# ==========================================
+# HEADER
 
 st.title("PYTHON ATM")
 
@@ -39,9 +36,7 @@ st.write(
 st.divider()
 
 
-# ==========================================
-# SIDEBAR MENU
-# ==========================================
+# MENU
 
 st.sidebar.title("ATM MENU")
 
@@ -57,9 +52,9 @@ choice = st.sidebar.radio(
 )
 
 
-# ==========================================
+
 # 1. CHECK BALANCE
-# ==========================================
+
 
 if choice == "Check Balance":
 
@@ -75,9 +70,9 @@ if choice == "Check Balance":
     )
 
 
-# ==========================================
+
 # 2. DEPOSIT
-# ==========================================
+
 
 elif choice == "Deposit":
 
@@ -119,9 +114,9 @@ elif choice == "Deposit":
                 )
 
 
-# ==========================================
+
 # 3. WITHDRAW
-# ==========================================
+
 
 elif choice == "Withdraw":
 
@@ -171,9 +166,9 @@ elif choice == "Withdraw":
                 )
 
 
-# ==========================================
+
 # 4. VIEW TRANSACTION HISTORY
-# ==========================================
+
 
 elif choice == "View History":
 
@@ -264,10 +259,9 @@ elif choice == "Analyze Transactions":
     )
 
 
-    # --------------------------------------
+
     # ANALYSIS 1
-    # TRANSACTION SUMMARY
-    # --------------------------------------
+
 
     st.subheader(
         "1. Transaction Summary"
@@ -294,10 +288,9 @@ elif choice == "Analyze Transactions":
     st.divider()
 
 
-    # --------------------------------------
+  
     # ANALYSIS 2
-    # TRANSACTION AMOUNT ANALYSIS
-    # --------------------------------------
+
 
     st.subheader(
         "2. Transaction Amount Analysis"
@@ -324,10 +317,9 @@ elif choice == "Analyze Transactions":
     st.divider()
 
 
-    # --------------------------------------
+
     # ANALYSIS 3
-    # ACCOUNT ACTIVITY ANALYSIS
-    # --------------------------------------
+
 
     st.subheader(
         "3. Account Activity Analysis"
