@@ -65,7 +65,7 @@ def analyze_transactions():
         elif line.startswith("Amount:"):
 
             amount_text = (
-                line.replace("Amount: ₱", "")
+                line.replace("Amount: PHP", "")
                 .replace(",", "")
                 .strip()
             )
