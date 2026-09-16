@@ -1,9 +1,6 @@
 import streamlit as st
 
-account = Account(
-    "Juan Dela Cruz",
-    10000.00
-)
+
 
 from Monton_atm_account import Account
 import Monton_atm_analysis
@@ -13,7 +10,10 @@ import Monton_atm_withdraw
 import Monton_atm_history
 
 
-
+account = Account(
+    "Juan Dela Cruz",
+    10000.00
+)
 
 # ==========================================
 # STREAMLIT PAGE CONFIGURATION
